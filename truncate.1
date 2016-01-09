@@ -1,0 +1,44 @@
+.\" Copyright Folkert van Heusden, 2003
+.\" $Id: truncate.1,v 1.2 2009/04/01 12:14:54 folkert Exp $
+.\"
+.\" This file may be copied under the conditions described
+.\" in the LDP GENERAL PUBLIC LICENSE, Version 1, September 1998
+.\" that should have been distributed together with this file.
+.\"
+.TH TRUNCATE 1 2003-09 "truncate"
+.SH NAME
+truncate \- truncate a file (make smaller/larger)
+.SH SYNOPSIS
+.BI "truncate [-c] -s [+|-]size[K|k|M|m|G|g|T|t] file ..."
+.PP
+.BI "truncate [-c] -r rfile file ..."
+.sp
+.SH DESCRIPTION
+The program
+.B truncate
+truncates a file to a new size. This program is compatible
+with the (Free-)BSD version of truncate.
+.B "\-c"
+If the file already exists, do not (re-)create it but continue silently.
+.TP
+.B "\-r rfile"
+Pick the filesize from the given file 'rfile' and use it for the new filesize of 'file'.
+.TP
+.B "\-s [+|-]size[K|k|M|m|G|g|T|t]"
+Sets the new size of the file.
+.TP
+.PP
+
+.SH BUGS
+None. This program is totally bug-free.
+
+.SH "SEE ALSO"
+.BR http://vanheusden.com/Linux/
+
+.SH NOTES
+This page describes
+.B truncate
+as found in the truncate-0.7 package;
+other versions may differ slightly.
+Mail corrections and additions to folkert@vanheusden.com.
+Report bugs in the program to folkert@vanheusden.com.
